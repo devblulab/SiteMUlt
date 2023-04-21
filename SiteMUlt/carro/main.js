@@ -1,0 +1,1 @@
+const navLinks=document.querySelectorAll("nav a");navLinks.forEach(a=>{a.addEventListener("click",b=>{b.preventDefault();const c=a.getAttribute("href"),d=document.querySelector(c).offsetTop;window.scrollTo({top:d,behavior:"smooth"})})});

@@ -1,0 +1,1 @@
+const navLinks=document.querySelectorAll("nav ul li a"),sections=document.querySelectorAll("main section");function toggleSection(a){sections.forEach(b=>{b.style.display=b.getAttribute("id")===a?"block":"none"})}navLinks.forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();const c=a.getAttribute("href").substring(1);toggleSection(c)})}),toggleSection("home");

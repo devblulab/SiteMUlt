@@ -1,0 +1,1 @@
+const whatsappNumber="5548999450642",whatsappBtns=document.querySelectorAll(".whatsapp-btn");whatsappBtns.forEach(a=>{a.addEventListener("click",()=>{const b=a.parentElement.querySelector("h2").textContent,c=`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Quero pedir uma pizza de ${b}`)}`;window.open(c)})});
